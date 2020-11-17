@@ -1,12 +1,10 @@
 # Fish Theme: clearance
-Personalised colours
 
-
-A minimalist [fish shell](http://fishshell.com/) theme for people who use git
 Original: [clearance theme](https://github.com/cseelus/clearance-fish)
 
-![clearance theme](https://raw.github.com/cseelus/clearance-fish/master/clearance-fish_preview.png)
+**Fork reason**: changed colours for virtualenv and pwd
 
-## Like it?
 
-Check out other versions of this theme for OSX Terminal or VIM!
+A minimalist [fish shell](http://fishshell.com/) theme for people who use git.
+
+![clearance theme](https://raw.github.com/LupusInFabula/theme-clearance/master/clearance-fish_preview.png)
