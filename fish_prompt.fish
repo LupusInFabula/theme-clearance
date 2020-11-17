@@ -22,8 +22,9 @@ function fish_prompt
   set -l blue (set_color blue)
   set -l green (set_color green)
   set -l normal (set_color normal)
+  set -l gray (set_color B2BDCF)
 
-  set -l cwd $normal(pwd | sed "s:^$HOME:~:")
+  set -l cwd $gray(pwd | sed "s:^$HOME:~:")
 
   # Output the prompt, left to right
 
@@ -43,9 +44,9 @@ function fish_prompt
     set -l git_branch (_git_branch_name)
 
     if [ (_git_is_dirty) ]
-      set git_info '(' $yellow $git_branch "±" $normal ')'
+      set git_info $normal '(' $yellow $git_branch "±" $normal ')'
     else
-      set git_info '(' $green $git_branch $normal ')'
+      set git_info $normal '(' $green $git_branch $normal ')'
     end
     echo -n -s ' · ' $git_info $normal
   end
